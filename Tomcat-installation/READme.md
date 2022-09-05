@@ -21,7 +21,7 @@ cd /opt
 sudo yum install git wget -y
 sudo yum install java-1.8.0-openjdk-devel -y
 # Download tomcat software and extract it.
-sudo yum install wget unzip -y
+
 ```
 ### Install Tomcat version 9.0.65
 ``` sh
@@ -36,6 +36,7 @@ sh /opt/tomcat9/bin/startup.sh
 sudo ln -s /opt/tomcat9/bin/startup.sh /usr/bin/starttomcat
 sudo ln -s /opt/tomcat9/bin/shutdown.sh /usr/bin/stoptomcat
 starttomcat
+sudo hostnamectl set-hostname tomcat
 sudo su - ec2-user
 ```
 
